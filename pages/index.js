@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Button, Container, Row, Col, Form,Image,Nav} from "react-bootstrap";
+import {  Button, Container, Row, Col, Form,} from "react-bootstrap";
 import stylecss from '../assets/styles/Home.module.css'
 const index = () => {
   return (
@@ -7,23 +7,24 @@ const index = () => {
      <body className={stylecss.background}> 
       <Container className={stylecss.Container}>
           <Row>
-            <Col className={stylecss.Col}>
-              <h1 className={stylecss.h}>Welcome to MOHUB.COM</h1>
+            <Col className={stylecss.Col}style={{marginTop:'60%'}}>
                 <Form.Row className={stylecss.Form1}>
                   <Col>
-                    <Button  href='register'  variant="primary" size='lg' style={{fontFamily:'Kanit, sans-serif',backgroundColor:'#FF6666',borderColor:'#FFFFFF'}} > 
-                    Register Here          
-                    </Button>{'  '}
-                    <Button href='features' variant="primary" size='lg' style={{fontFamily:'Kanit, sans-serif',backgroundColor:'#FF6666',borderColor:'#FFFFFF'}} >
-                      Visit as a guest
+                  
+                  <h className={stylecss.h}>Beef Quality Grading System </h>
+                  <h1 className={stylecss.h1}>
+                    ระบบการตัดเกรดเนื้อโค
+                  </h1>
+                    <Button className={stylecss.GradeButton} href='#startgradding'  variant="primary" size='lg' > 
+                    Start Grading         
                     </Button>
                   </Col>
                 </Form.Row>
             </Col>
           </Row>
         </Container>
-
      </body>
+     
     </div>
   )
 }

@@ -1,0 +1,17 @@
+.item2 {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .item2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 375px) {
+  .item2 {
+    grid-template-columns: 1fr;
+  }
+}
